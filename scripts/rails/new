@@ -1,0 +1,5 @@
+cd `dirname $0`
+
+docker exec -t summer_rails bash -c 'rails new project -d mysql -B'
+
+./install

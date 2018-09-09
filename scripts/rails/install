@@ -1,0 +1,3 @@
+docker exec -t summer_rails bash -c "(cd ./project;  echo \"gem 'therubyracer'\" >> Gemfile)"
+
+docker exec -t summer_rails bash -c '(cd ./project; bundle install)'

@@ -1,0 +1,8 @@
+cd `dirname $0`
+cd ..
+
+docker kill summer_mysql
+docker kill summer_rails
+
+docker run --rm -d -e MYSQL_DATABASE=summer --name summer_mysql sizuma/mysql-jp:5.6
+docker run --rm -d --link summer_mysql:mysql -p 3000:3000 -v `pwd`:/src --name summer_rails sizuma/rails bash -c 'while true; do sleep 5; clear; done;'

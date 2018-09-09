@@ -1,0 +1,1 @@
+docker exec -t summer_rails bash ./scripts/setmod

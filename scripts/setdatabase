@@ -1,0 +1,6 @@
+cd `dirname $0`
+cd ..
+
+sed -i 's/host: localhost/host: mysql/' ./project/config/database.yml 
+sed -i 's/password:/password: secret/' ./project/config/database.yml 
+sed -i 's/database: project_development/database: summer/' ./project/config/database.yml 

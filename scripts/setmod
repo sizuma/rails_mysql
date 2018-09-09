@@ -1,0 +1,5 @@
+cd `dirname $0`
+cd ..
+
+find ./project -type f | xargs chmod 666
+find ./project -type d | xargs chmod 777
