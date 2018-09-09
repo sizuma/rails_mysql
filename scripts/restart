@@ -1,0 +1,4 @@
+cd `dirname $0`
+cd ..
+
+./scripts/up ; ./scripts/rails/install  ; ./scripts/rails/server
